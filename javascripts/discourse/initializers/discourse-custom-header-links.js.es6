@@ -40,6 +40,7 @@ export default {
           const anchorAttributes = {
             title: linkTitle,
             href: linkHref,
+            id:linkTitle
           };
           if (linkTarget) {
             anchorAttributes.target = linkTarget;
@@ -81,7 +82,7 @@ export default {
                 return false;
               }
               e.preventDefault();
-
+              alert(e.target.id);
               DiscourseURL.routeToTag($(e.target).closest("a")[0]);
 
               return false;
