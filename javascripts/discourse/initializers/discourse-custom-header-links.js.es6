@@ -77,12 +77,12 @@ export default {
         // if links are aligned left, we need to be able to open in a new tab
         api.reopenWidget("home-logo", {
           click(e) {
+            debugger;
             if (e.target.id === "site-logo") {
               if (wantsNewWindow(e)) {
                 return false;
               }
-              e.preventDefault();
-              alert(e.target.id);
+              e.preventDefault();              
               DiscourseURL.routeToTag($(e.target).closest("a")[0]);
 
               return false;
