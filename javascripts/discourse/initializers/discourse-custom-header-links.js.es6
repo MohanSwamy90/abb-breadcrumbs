@@ -71,13 +71,7 @@ export default {
         } else {
           dHeader.classList.remove("hide-menus");
         }
-      });
-
-		api.reopenWidget("headerLink", {
-			click(e) {
-				debugger;
-			}
-		});
+      });		
 	
       if (settings.links_position === "left") {
         // if links are aligned left, we need to be able to open in a new tab
