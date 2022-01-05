@@ -6,8 +6,7 @@ import DiscourseURL from "discourse/lib/url";
 export default {
   name: "discourse-custom-header-links",
 
-  initialize() {
-    $('.d-header .title').prepend("<a class='community-landing' href='/'>Community</a><span class='vertical-line sec-nav-vline ie-brand-vline'></span>");
+  initialize() {    
     withPluginApi("0.8.20", (api) => {
       const customHeaderLinks = settings.Custom_header_links;
       if (!customHeaderLinks.length) {
