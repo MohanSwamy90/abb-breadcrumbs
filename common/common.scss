@@ -44,14 +44,15 @@
    opacity: 1;    
 }
 
-.custom-header-links > li:nth-child(1){
-  .headerLink a {
+.custom-header-links > li:nth-child(1){  
+ padding-right:20px;    
+}
+  
+  .custom-header-links > li:nth-child(1) .headerLink a {
     text-align: left;
     font: normal normal medium 17px/25px ABBvoice !important;
     letter-spacing: 0px;
     color: #242424;
     opacity: 1;  
   }
- padding-right:20px;    
-}
    
