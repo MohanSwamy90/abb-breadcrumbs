@@ -6,6 +6,7 @@
       $(this).addClass('active-tab');
      });
      
+     debugger;
      var location = window.location.href;
      var selectedTab = (location.split('/')[5]===undefined)?'':location.split('/')[5];
      if(location.href.split('/')[3]=='community' && location.split('/')[5]===undefined ){
