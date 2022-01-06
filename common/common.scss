@@ -12,6 +12,7 @@
   margin: 0;
   .headerLink {
     list-style: none;
+    padding-bottom:10px;
     a {
       padding: 6px 10px;
       color: var(--header_primary);
@@ -73,4 +74,7 @@ li.headerLink.vdm.first.keep.community-custom-header-links a:after {
     color: gainsboro;
 }
 
+.active-tab{
+  border-bottom: 2px solid #0E74DA;
+}
    
