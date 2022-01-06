@@ -4,6 +4,33 @@
     $(".headerLink").on("click",function(){    
       $(".headerLink").removeClass('active-tab');    
       $(this).addClass('active-tab');
-     }); 
- }); 
+     });
+     
+     var location = window.location.href;
+     var selectedTab = (location.split('/')[5]===undefined)?'':location.split('/')[5];
+     if(location.href.split('/')[3]=='community' && location.split('/')[5]===undefined ){
+      selectedTab = 'community';
+     }
+       switch(selectedTab){
+       case 'community':
+        toggleActiveClass('.community');
+        break;
+       case 'discussion':
+        toggleActiveClass('.discussion');
+        break;
+       case 'announcements':
+        toggleActiveClass('.announcements');
+        break;
+       default:
+       toggleActiveClass('.community');
+        break;
+       }
+       
+     function toggleActiveClass(class){
+     debugger;
+      $(".headerLink").removeClass('active-tab');    
+      $(class+"custom-header-links").addClass('active-tab');
+     }
+ });
+ 
 </script>
