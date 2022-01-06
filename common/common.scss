@@ -65,7 +65,12 @@ font-weight:bold;
 li.headerLink.vdm.first.keep.community-custom-header-links a {
  font-weight: bold;
 }
-li.headerLink.vdm.first.keep.community-custom-header-links a:after {content: '|';}
 
+li.headerLink.vdm.first.keep.community-custom-header-links a:after {
+    content: '|';
+    font-weight: normal;
+    padding-left: 10px;
+    color: gainsboro;
+}
 
    
