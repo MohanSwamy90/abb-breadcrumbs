@@ -37,8 +37,7 @@ export default {
             .toLowerCase()
             .replace(/\s/gi, "-")}-custom-header-links`;
 
-          const anchorAttributes = {
-            title: linkTitle,
+          const anchorAttributes = {            
             href: linkHref,
             id:linkTitle
           };
