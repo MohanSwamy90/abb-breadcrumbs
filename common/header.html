@@ -1,5 +1,15 @@
 
 <script type="text/discourse-plugin" version="0.8">
+window.addEventListener('popstate', function (event) {
+	 aler(popstate);
+});
+$(window).on('hashchange', function(e) {
+   alert(1);
+});
+
+$(windows.location).change(function() {
+   alert(2);
+});
  $(document).ready(function() {
     $(".headerLink").on("click",function(){    
       $(".headerLink").removeClass('active-tab');    
