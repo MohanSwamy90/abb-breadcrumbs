@@ -1,6 +1,6 @@
 
 <script type="text/discourse-plugin" version="0.8">
-window.addEventListener('popstate', function (event) {
+$(window).on('popstate', function(e){
 	 aler(popstate);
 });
 $(window).on('hashchange', function(e) {
