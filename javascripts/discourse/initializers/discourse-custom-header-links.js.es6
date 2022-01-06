@@ -34,7 +34,7 @@ export default {
 	  if(headerLinks.length === 0){
 		  deviceClass = deviceClass+ '.first'
 	  } 
-          const deviceClass = `.${device}`;
+         
           const linkTarget = target === "self" ? "" : "_blank";
           const keepOnScrollClass = keepOnScroll === "keep" ? ".keep" : "";
           const linkClass = `.${linkText
