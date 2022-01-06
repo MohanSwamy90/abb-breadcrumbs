@@ -46,7 +46,7 @@
 }
 
 .custom-header-links > li:nth-child(1){  
- padding-right:20px;    
+font-weight:bold;   
 }
   
   .custom-header-links > li:nth-child(1) .headerLink a {
@@ -61,4 +61,6 @@
   background-color: white;
   box-shadow: none;
 }
+
+li.headerLink.vdm.first.keep.community-custom-header-links a:after {content: '|';}
    
